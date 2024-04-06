@@ -45,7 +45,7 @@ in
       extraConfig = {
         commit.gpgsign = true;
 	gpg.format = "ssh";
-	user.signingkey = "$HOME/.ssh/git_id_ed25519.pub";
+	user.signingkey = "~/.ssh/git_id_ed25519.pub";
       };
     };
     ripgrep.enable = true;
