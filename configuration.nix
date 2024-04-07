@@ -191,8 +191,8 @@
 
             "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
               binding = "<Ctrl><Alt>t";
-              command = "kgx";
-              name = "GNOME Console";
+              command = "alacritty -e zsh -c 'zellij attach --index 0 || zellij'";
+              name = "Alacritty";
             };
 
 	    "org/gnome/shell" = {
@@ -225,6 +225,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    alacritty
     neovim
     keepassxc
     git
@@ -246,6 +247,7 @@
   };
 
   environment.gnome.excludePackages = (with pkgs; [
+    gnome-console
     gnome-photos
     gnome-tour
     gedit
