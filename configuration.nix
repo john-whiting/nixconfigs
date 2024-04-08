@@ -207,12 +207,16 @@
             "org/gnome/shell/window-switcher" = {
               current-workspace-only = true;
             };
+
+	    "org/gnome/desktop/interface" = {
+              cursor-size = 24;
+	    };
 	  };
     };
     home.pointerCursor = {
       name = "Adwaita";
       package = pkgs.gnome.adwaita-icon-theme;
-      size = 24;
+      size = 48;
       x11.enable = true;
       gtk.enable = true;
     };
