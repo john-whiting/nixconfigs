@@ -11,6 +11,7 @@ in
 
   home.packages = [
     #unstable.discord-screenaudio
+    pkgs.spotify
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
   ];
 
